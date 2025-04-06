@@ -1,4 +1,6 @@
 node_modules/
 .next/
+venv/
+area_datasets 2_7AM/venv/
 *.log
 
