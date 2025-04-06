@@ -1,0 +1,71 @@
+[
+  {
+    "id": 1,
+    "type": "Unauthorized Discount",
+    "severity": "High",
+    "date": "2023-05-15",
+    "amount": "$1,245.00",
+    "description": "Employee applied a 25% discount without manager approval. This exceeds the authorized limit of 15% for this product category.",
+    "relatedTransactions": [
+      { "id": "T-10045", "date": "2023-05-15", "amount": "$1,245.00" },
+      { "id": "T-10032", "date": "2023-05-14", "amount": "$980.50" }
+    ],
+    "riskScore": 85,
+    "status": "Open"
+  },
+  {
+    "id": 2,
+    "type": "Tax Miscalculation",
+    "severity": "Medium",
+    "date": "2023-05-14",
+    "amount": "$345.50",
+    "description": "Sales tax calculated at 5% instead of the required 8.25% for this jurisdiction.",
+    "relatedTransactions": [
+      { "id": "T-10033", "date": "2023-05-14", "amount": "$345.50" }
+    ],
+    "riskScore": 65,
+    "status": "Open"
+  },
+  {
+    "id": 3,
+    "type": "Pricing Modification",
+    "severity": "High",
+    "date": "2023-05-13",
+    "amount": "$2,100.00",
+    "description": "Product price manually modified below the minimum allowed selling price.",
+    "relatedTransactions": [
+      { "id": "T-10028", "date": "2023-05-13", "amount": "$2,100.00" }
+    ],
+    "riskScore": 80,
+    "status": "Open"
+  },
+  {
+    "id": 4,
+    "type": "Suspicious Transaction",
+    "severity": "Medium",
+    "date": "2023-05-12",
+    "amount": "$780.25",
+    "description": "Multiple identical transactions processed within a short time window.",
+    "relatedTransactions": [
+      { "id": "T-10020", "date": "2023-05-12", "amount": "$780.25" },
+      { "id": "T-10021", "date": "2023-05-12", "amount": "$780.25" },
+      { "id": "T-10022", "date": "2023-05-12", "amount": "$780.25" }
+    ],
+    "riskScore": 70,
+    "status": "Open"
+  },
+  {
+    "id": 5,
+    "type": "Duplicate Entry",
+    "severity": "Low",
+    "date": "2023-05-11",
+    "amount": "$450.00",
+    "description": "Same invoice entered twice in the system.",
+    "relatedTransactions": [
+      { "id": "T-10015", "date": "2023-05-11", "amount": "$450.00" },
+      { "id": "T-10016", "date": "2023-05-11", "amount": "$450.00" }
+    ],
+    "riskScore": 45,
+    "status": "Open"
+  }
+]

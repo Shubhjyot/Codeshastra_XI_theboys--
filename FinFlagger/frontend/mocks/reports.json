@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "name": "May 2023 Sales Audit",
+    "date": "2023-05-31",
+    "anomalies": 51,
+    "status": "Completed",
+    "summary": "This audit identified 51 anomalies across various categories, with unauthorized discounts being the most common issue.",
+    "details": {
+      "totalTransactions": 12450,
+      "totalValue": "$1,245,000",
+      "anomalyRate": "0.41%",
+      "potentialLoss": "$12,450",
+      "categories": {
+        "Unauthorized Discount": 18,
+        "Tax Miscalculation": 12,
+        "Pricing Modification": 15,
+        "Suspicious Transaction": 6
+      },
+      "severityBreakdown": {
+        "High": 15,
+        "Medium": 22,
+        "Low": 14
+      }
+    }
+  },
+  {
+    "id": 2,
+    "name": "April 2023 Sales Audit",
+    "date": "2023-04-30",
+    "anomalies": 43,
+    "status": "Completed",
+    "summary": "This audit identified 43 anomalies across various categories, with pricing modifications being the most common issue.",
+    "details": {
+      "totalTransactions": 11850,
+      "totalValue": "$1,185,000",
+      "anomalyRate": "0.36%",
+      "potentialLoss": "$10,850",
+      "categories": {
+        "Unauthorized Discount": 12,
+        "Tax Miscalculation": 10,
+        "Pricing Modification": 16,
+        "Suspicious Transaction": 5
+      },
+      "severityBreakdown": {
+        "High": 13,
+        "Medium": 19,
+        "Low": 11
+      }
+    }
+  },
+  {
+    "id": 3,
+    "name": "March 2023 Sales Audit",
+    "date": "2023-03-31",
+    "anomalies": 38,
+    "status": "Completed",
+    "summary": "This audit identified 38 anomalies across various categories, with tax miscalculations being the most common issue.",
+    "details": {
+      "totalTransactions": 10950,
+      "totalValue": "$1,095,000",
+      "anomalyRate": "0.35%",
+      "potentialLoss": "$9,250",
+      "categories": {
+        "Unauthorized Discount": 10,
+        "Tax Miscalculation": 14,
+        "Pricing Modification": 9,
+        "Suspicious Transaction": 5
+      },
+      "severityBreakdown": {
+        "High": 11,
+        "Medium": 17,
+        "Low": 10
+      }
+    }
+  }
+]

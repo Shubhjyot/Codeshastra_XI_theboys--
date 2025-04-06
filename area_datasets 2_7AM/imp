@@ -1,0 +1,183 @@
+[Done] exited with code=0 in 18.401 seconds
+
+[Running] python -u "/Users/shubhjyot/Desktop/area_datasets/anomalydetection.py"
+
+Processing '/Users/shubhjyot/Desktop/area_datasets/cleaned_area_Home Delivery.csv' with 720 rows and 55 columns
+Converted column 'Date' to datetime. Missing/invalid dates: 0
+/Users/shubhjyot/Desktop/area_datasets/anomalydetection.py:13: UserWarning: Parsing dates in %Y-%m-%d %H:%M:%S %Z format when dayfirst=True was specified. Pass `dayfirst=False` or specify a format to silence this warning.
+  df[col] = pd.to_datetime(df[col], errors='coerce', dayfirst=True)
+Converted column 'First_Print_Date_BSR' to datetime. Missing/invalid dates: 17
+Converted column 'Last_Settlement_Date_BSR' to datetime. Missing/invalid dates: 440
+
+Anomaly Flag Counts:
+flag_discount_not_approved: 54
+flag_discount_high: 2
+flag_order_cancelled_no_reason: 0
+flag_service_charge_mismatch: 54
+flag_huge_time_diff: 54
+flag_price_modification: 0
+flag_zero_price_or_subtotal: 6
+flag_complimentary_price_charged: 0
+flag_tax_mismatch: 0
+Processed dataset saved to '/Users/shubhjyot/Desktop/area_datasets/cleaned_area_Home_Delivery_features.csv'
+
+Processing '/Users/shubhjyot/Desktop/area_datasets/cleaned_area_Parcel.csv' with 3129 rows and 55 columns
+Converted column 'Date' to datetime. Missing/invalid dates: 0
+/Users/shubhjyot/Desktop/area_datasets/anomalydetection.py:13: UserWarning: Parsing dates in %Y-%m-%d %H:%M:%S %Z format when dayfirst=True was specified. Pass `dayfirst=False` or specify a format to silence this warning.
+  df[col] = pd.to_datetime(df[col], errors='coerce', dayfirst=True)
+Converted column 'First_Print_Date_BSR' to datetime. Missing/invalid dates: 574
+/Users/shubhjyot/Desktop/area_datasets/anomalydetection.py:13: UserWarning: Parsing dates in %Y-%m-%d %H:%M:%S %Z format when dayfirst=True was specified. Pass `dayfirst=False` or specify a format to silence this warning.
+  df[col] = pd.to_datetime(df[col], errors='coerce', dayfirst=True)
+Converted column 'Last_Settlement_Date_BSR' to datetime. Missing/invalid dates: 578
+
+Anomaly Flag Counts:
+flag_discount_not_approved: 138
+flag_discount_high: 14
+flag_order_cancelled_no_reason: 5
+flag_service_charge_mismatch: 140
+flag_huge_time_diff: 0
+flag_price_modification: 0
+flag_zero_price_or_subtotal: 5
+flag_complimentary_price_charged: 0
+flag_tax_mismatch: 2
+Processed dataset saved to '/Users/shubhjyot/Desktop/area_datasets/cleaned_area_Parcel_features.csv'
+
+Processing '/Users/shubhjyot/Desktop/area_datasets/cleaned_area_Swiggy.csv' with 2488 rows and 84 columns
+Converted column 'Date' to datetime. Missing/invalid dates: 0
+/Users/shubhjyot/Desktop/area_datasets/anomalydetection.py:13: UserWarning: Parsing dates in %Y-%m-%d %H:%M:%S %Z format when dayfirst=True was specified. Pass `dayfirst=False` or specify a format to silence this warning.
+  df[col] = pd.to_datetime(df[col], errors='coerce', dayfirst=True)
+Converted column 'First_Print_Date_BSR' to datetime. Missing/invalid dates: 25
+/Users/shubhjyot/Desktop/area_datasets/anomalydetection.py:13: UserWarning: Parsing dates in %Y-%m-%d %H:%M:%S %Z format when dayfirst=True was specified. Pass `dayfirst=False` or specify a format to silence this warning.
+  df[col] = pd.to_datetime(df[col], errors='coerce', dayfirst=True)
+Converted column 'Last_Settlement_Date_BSR' to datetime. Missing/invalid dates: 27
+
+Anomaly Flag Counts:
+flag_discount_not_approved: 726
+flag_discount_high: 0
+flag_order_cancelled_no_reason: 21
+flag_service_charge_mismatch: 726
+flag_huge_time_diff: 0
+flag_price_modification: 0
+flag_zero_price_or_subtotal: 0
+flag_complimentary_price_charged: 0
+flag_tax_mismatch: 0
+Processed dataset saved to '/Users/shubhjyot/Desktop/area_datasets/cleaned_area_Swiggy_features.csv'
+
+Processing '/Users/shubhjyot/Desktop/area_datasets/cleaned_area_Zomato.csv' with 7151 rows and 85 columns
+Converted column 'Date' to datetime. Missing/invalid dates: 0
+/Users/shubhjyot/Desktop/area_datasets/anomalydetection.py:13: UserWarning: Parsing dates in %Y-%m-%d %H:%M:%S %Z format when dayfirst=True was specified. Pass `dayfirst=False` or specify a format to silence this warning.
+  df[col] = pd.to_datetime(df[col], errors='coerce', dayfirst=True)
+Converted column 'First_Print_Date_BSR' to datetime. Missing/invalid dates: 104
+/Users/shubhjyot/Desktop/area_datasets/anomalydetection.py:13: UserWarning: Parsing dates in %Y-%m-%d %H:%M:%S %Z format when dayfirst=True was specified. Pass `dayfirst=False` or specify a format to silence this warning.
+  df[col] = pd.to_datetime(df[col], errors='coerce', dayfirst=True)
+Converted column 'Last_Settlement_Date_BSR' to datetime. Missing/invalid dates: 109
+
+Anomaly Flag Counts:
+flag_discount_not_approved: 538
+flag_discount_high: 6
+flag_order_cancelled_no_reason: 91
+flag_service_charge_mismatch: 538
+flag_huge_time_diff: 0
+flag_price_modification: 0
+flag_zero_price_or_subtotal: 0
+flag_complimentary_price_charged: 0
+flag_tax_mismatch: 0
+Processed dataset saved to '/Users/shubhjyot/Desktop/area_datasets/cleaned_area_Zomato_features.csv'
+
+[Done] exited with code=0 in 2.946 seconds
+
+
+[Done] exited with code=0 in 2.946 seconds
+
+[Running] python -u "/Users/shubhjyot/Desktop/area_datasets/anomaly2.py"
+/Users/shubhjyot/Desktop/area_datasets/anomaly2.py:6: DtypeWarning: Columns (2,14,38,39,42,49,50,53,65,66) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path)
+
+Processing '/Users/shubhjyot/Desktop/area_datasets/cleaned_area_Dine in.csv' with 127797 rows and 81 columns
+Converted column 'Date' to datetime. Missing/invalid dates: 0
+/Users/shubhjyot/Desktop/area_datasets/anomaly2.py:13: UserWarning: Parsing dates in %Y-%m-%d %H:%M:%S %Z format when dayfirst=True was specified. Pass `dayfirst=False` or specify a format to silence this warning.
+  df[col] = pd.to_datetime(df[col], errors='coerce', dayfirst=True)
+Converted column 'First_Print_Date_BSR' to datetime. Missing/invalid dates: 5091
+/Users/shubhjyot/Desktop/area_datasets/anomaly2.py:13: UserWarning: Parsing dates in %Y-%m-%d %H:%M:%S %Z format when dayfirst=True was specified. Pass `dayfirst=False` or specify a format to silence this warning.
+  df[col] = pd.to_datetime(df[col], errors='coerce', dayfirst=True)
+Converted column 'Last_Settlement_Date_BSR' to datetime. Missing/invalid dates: 5099
+
+Anomaly Flag Counts:
+flag_discount_not_approved: 3911
+flag_discount_high: 1048
+flag_order_cancelled_no_reason: 33
+flag_service_charge_mismatch: 105407
+flag_huge_time_diff: 0
+flag_price_modification: 0
+flag_zero_price_or_subtotal: 16389
+flag_complimentary_price_charged: 0
+flag_tax_mismatch: 105003
+Processed dataset saved to '/Users/shubhjyot/Desktop/area_datasets/cleaned_area_Dine_in_features.csv'
+/Users/shubhjyot/Desktop/area_datasets/anomaly2.py:6: DtypeWarning: Columns (39,50) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path)
+
+Processing '/Users/shubhjyot/Desktop/area_datasets/cleaned_area_Garden Table.csv' with 24124 rows and 78 columns
+Converted column 'Date' to datetime. Missing/invalid dates: 0
+/Users/shubhjyot/Desktop/area_datasets/anomaly2.py:13: UserWarning: Parsing dates in %Y-%m-%d %H:%M:%S %Z format when dayfirst=True was specified. Pass `dayfirst=False` or specify a format to silence this warning.
+  df[col] = pd.to_datetime(df[col], errors='coerce', dayfirst=True)
+Converted column 'First_Print_Date_BSR' to datetime. Missing/invalid dates: 993
+/Users/shubhjyot/Desktop/area_datasets/anomaly2.py:13: UserWarning: Parsing dates in %Y-%m-%d %H:%M:%S %Z format when dayfirst=True was specified. Pass `dayfirst=False` or specify a format to silence this warning.
+  df[col] = pd.to_datetime(df[col], errors='coerce', dayfirst=True)
+Converted column 'Last_Settlement_Date_BSR' to datetime. Missing/invalid dates: 993
+
+Anomaly Flag Counts:
+flag_discount_not_approved: 1001
+flag_discount_high: 238
+flag_order_cancelled_no_reason: 0
+flag_service_charge_mismatch: 20562
+flag_huge_time_diff: 0
+flag_price_modification: 0
+flag_zero_price_or_subtotal: 2314
+flag_complimentary_price_charged: 0
+flag_tax_mismatch: 20491
+Processed dataset saved to '/Users/shubhjyot/Desktop/area_datasets/cleaned_area_Garden_Table_features.csv'
+
+Processing '/Users/shubhjyot/Desktop/area_datasets/cleaned_area_PARTY.csv' with 4521 rows and 56 columns
+Converted column 'Date' to datetime. Missing/invalid dates: 0
+/Users/shubhjyot/Desktop/area_datasets/anomaly2.py:13: UserWarning: Parsing dates in %Y-%m-%d %H:%M:%S %Z format when dayfirst=True was specified. Pass `dayfirst=False` or specify a format to silence this warning.
+  df[col] = pd.to_datetime(df[col], errors='coerce', dayfirst=True)
+Converted column 'First_Print_Date_BSR' to datetime. Missing/invalid dates: 3445
+/Users/shubhjyot/Desktop/area_datasets/anomaly2.py:13: UserWarning: Parsing dates in %Y-%m-%d %H:%M:%S %Z format when dayfirst=True was specified. Pass `dayfirst=False` or specify a format to silence this warning.
+  df[col] = pd.to_datetime(df[col], errors='coerce', dayfirst=True)
+Converted column 'Last_Settlement_Date_BSR' to datetime. Missing/invalid dates: 3445
+
+Anomaly Flag Counts:
+flag_discount_not_approved: 308
+flag_discount_high: 114
+flag_order_cancelled_no_reason: 0
+flag_service_charge_mismatch: 2667
+flag_huge_time_diff: 0
+flag_price_modification: 0
+flag_zero_price_or_subtotal: 167
+flag_complimentary_price_charged: 0
+flag_tax_mismatch: 2628
+Processed dataset saved to '/Users/shubhjyot/Desktop/area_datasets/cleaned_area_PARTY_features.csv'
+/Users/shubhjyot/Desktop/area_datasets/anomaly2.py:6: DtypeWarning: Columns (38,41,48,51) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path)
+
+Processing '/Users/shubhjyot/Desktop/area_datasets/cleaned_area_Personal Dine In Room.csv' with 13155 rows and 76 columns
+Converted column 'Date' to datetime. Missing/invalid dates: 0
+/Users/shubhjyot/Desktop/area_datasets/anomaly2.py:13: UserWarning: Parsing dates in %Y-%m-%d %H:%M:%S %Z format when dayfirst=True was specified. Pass `dayfirst=False` or specify a format to silence this warning.
+  df[col] = pd.to_datetime(df[col], errors='coerce', dayfirst=True)
+Converted column 'First_Print_Date_BSR' to datetime. Missing/invalid dates: 801
+/Users/shubhjyot/Desktop/area_datasets/anomaly2.py:13: UserWarning: Parsing dates in %Y-%m-%d %H:%M:%S %Z format when dayfirst=True was specified. Pass `dayfirst=False` or specify a format to silence this warning.
+  df[col] = pd.to_datetime(df[col], errors='coerce', dayfirst=True)
+Converted column 'Last_Settlement_Date_BSR' to datetime. Missing/invalid dates: 801
+
+Anomaly Flag Counts:
+flag_discount_not_approved: 781
+flag_discount_high: 367
+flag_order_cancelled_no_reason: 0
+flag_service_charge_mismatch: 11203
+flag_huge_time_diff: 0
+flag_price_modification: 0
+flag_zero_price_or_subtotal: 1115
+flag_complimentary_price_charged: 0
+flag_tax_mismatch: 11181
+Processed dataset saved to '/Users/shubhjyot/Desktop/area_datasets/cleaned_area_Personal_Dine_In_Room_features.csv'
+

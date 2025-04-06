@@ -1,0 +1,507 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final Audit Report for AI-Powered Sales Data Auditing System</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #1a237e, #283593);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 { 
+            font-size: 2.5em; 
+            margin-bottom: 10px;
+        }
+        h2 { 
+            font-size: 1.8em; 
+            color: #1a237e;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        h3 { 
+            font-size: 1.4em; 
+            color: #283593;
+            margin-top: 30px;
+        }
+        h4 {
+            font-size: 1.2em;
+            color: #303f9f;
+        }
+        .executive-summary {
+            background-color: #f5f5f5;
+            border-left: 5px solid #1a237e;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        table { 
+            border-collapse: collapse; 
+            width: 100%; 
+            margin: 20px 0 30px 0;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+        }
+        table, th, td { 
+            border: 1px solid #e0e0e0; 
+        }
+        th { 
+            background-color: #283593; 
+            color: white; 
+            padding: 12px 8px;
+            text-align: left;
+        }
+        td { 
+            padding: 10px 8px; 
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f5f5f5;
+        }
+        img { 
+            max-width: 100%; 
+            height: auto; 
+            margin: 20px 0;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+        .chart-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+        .recommendation {
+            background-color: #e8eaf6;
+            border-left: 5px solid #3f51b5;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .high-severity {
+            background-color: #ffebee;
+            border-left: 5px solid #c62828;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .medium-severity {
+            background-color: #fff8e1;
+            border-left: 5px solid #f9a825;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .low-severity {
+            background-color: #e8f5e9;
+            border-left: 5px solid #388e3c;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        footer {
+            background-color: #e8eaf6;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+            border-top: 1px solid #c5cae9;
+        }
+        .kpi {
+            display: inline-block;
+            background-color: #1a237e;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px;
+            min-width: 200px;
+            text-align: center;
+        }
+        .kpi-value {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .kpi-label {
+            font-size: 0.9em;
+            text-transform: uppercase;
+        }
+        .kpi-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Final Audit Report</h1>
+        <p>AI-Powered Sales Data Auditing System</p>
+    </header>
+    <div class="container">
+        ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Audit Report - AI-Powered Sales Data Auditing System</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+
+        .dashboard {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+
+        .dashboard-item {
+            width: 45%;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box; /* Important for padding to be included in width */
+        }
+
+        .executive-summary {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .recommendation {
+            margin-bottom: 15px;
+        }
+
+        .recommendation strong {
+            color: #008000; /* Green for emphasis */
+        }
+
+        .severity-high {
+            color: red;
+        }
+
+        .severity-medium {
+            color: orange;
+        }
+
+        .severity-low {
+            color: green;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .dashboard-item {
+                width: 100%; /* Stack items on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Final Audit Report for AI-Powered Sales Data Auditing System</h1>
+
+    <section class="dashboard">
+        <div class="dashboard-item">
+            <h2>Anomaly Distribution</h2>
+            <img src="total_anomaly_counts.png" alt="Total Anomaly Counts">
+            <p><b>Insight:</b> This chart shows the overall distribution of anomalies across all datasets.  Focus should be given on the anomaly types with the highest counts, as these represent the greatest potential for financial leakage or operational inefficiencies.  For instance, a high count of 'Tax Mismatch' anomalies suggests systemic issues in tax calculation or reporting.</p>
+        </div>
+        <div class="dashboard-item">
+            <h2>Anomaly Heatmap by Channel</h2>
+            <img src="anomaly_heatmap.png" alt="Anomaly Heatmap">
+            <p><b>Insight:</b> This heatmap visualizes the concentration of different anomaly types across various sales channels.  Darker shades indicate higher concentrations.  Use this visualization to quickly identify which channels are most susceptible to specific types of anomalies.  For example, if Zomato shows a high concentration of 'Service Charge Mismatch', it warrants a focused investigation of service charge calculations within that channel.</p>
+        </div>
+        <div class="dashboard-item">
+            <h2>Severity Distribution</h2>
+            <img src="severity_distribution_pie.png" alt="Severity Distribution">
+            <p><b>Insight:</b> This pie chart illustrates the proportion of anomalies classified by severity (High, Medium, Low).  It immediately highlights the overall risk profile.  A large proportion of 'High' severity anomalies demands immediate attention and resource allocation.</p>
+        </div>
+        <div class="dashboard-item">
+            <h2>Channel Comparison</h2>
+            <img src="channel_comparison.png" alt="Channel Comparison">
+            <p><b>Insight:</b> This visualization provides a direct comparison of anomaly occurrences across different sales channels. Analyze which channels are consistently performing worse than others in terms of anomaly counts. Channels with significantly higher anomaly rates require more detailed investigation and tailored interventions.</p>
+        </div>
+    </section>
+
+    <section class="executive-summary">
+        <h2>Executive Summary</h2>
+        <p><b>Purpose & Scope:</b> This audit evaluated sales data from multiple channels to detect anomalies such as unauthorized price overrides, duplicate discounts, tax discrepancies, and more. The goal is to enhance financial reporting integrity and reduce compliance risks.</p>
+        <p><b>Key Findings:</b></p>
+        <ul>
+            <li>A significant number of orders exhibit discount approval issues and high discount ratios.</li>
+            <li>Several datasets show discrepancies between calculated totals and reported values.</li>
+            <li>Notable anomalies in service charge calculations and tax mismatches were observed.</li>
+        </ul>
+        <p><b>Metrics Overview:</b></p>
+        <ul>
+            <li>Total Anomalies Flagged: 73814</li>
+            <li>High-Risk Anomalies: 20110 (27.2%)</li>
+            <li>Medium-Risk Anomalies: 51747 (70.1%)</li>
+            <li>Low-Risk Anomalies: 1957 (2.7%)</li>
+        </ul>
+
+        <h3>Financial Risk Assessment</h3>
+        <p>The identified anomalies pose a significant financial risk.  Conservative estimates suggest potential revenue leakage of <b>₹[Insert Estimated Amount Here]</b> due to tax discrepancies, unauthorized discounts, and service charge mismatches. Further investigation is required to quantify the precise impact.</p>
+
+        <h3>Key Recommendations</h3>
+        <ul>
+            <li><b>Immediately investigate and rectify tax mismatches across all channels, prioritizing Zomato and Swiggy.</b>  Automate tax calculations and reconciliation processes to prevent future discrepancies.</li>
+            <li><b>Implement stricter discount approval workflows and monitor high discount ratios.</b>  Establish clear thresholds and require managerial approval for discounts exceeding these limits.</li>
+            <li><b>Review and standardize service charge calculations across all channels.</b>  Ensure consistency in application and reporting of service charges.</li>
+            <li><b>Implement continuous monitoring and alerting for anomalies.</b>  Leverage the AI-powered auditing system to proactively detect and address issues.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Anomaly Severity Classification</h2>
+        <p>The anomalies have been classified into three severity levels based on financial impact, compliance risk, and operational significance:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Severity</th>
+                    <th>Anomaly Types</th>
+                    <th>Business Impact</th>
+                    <th>Recommended Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="severity-high">High</td>
+                    <td>Tax Mismatch, Zero Price/Subtotal, Discount Not Approved</td>
+                    <td>Critical financial impact, potential revenue loss, compliance risks</td>
+                    <td>Immediate investigation required, escalate to finance team</td>
+                </tr>
+                <tr>
+                    <td class="severity-medium">Medium</td>
+                    <td>Service Charge Mismatch, Price Modification, High Discount, Complimentary Price Charged</td>
+                    <td>Moderate financial impact, potential process issues</td>
+                    <td>Review within 7 days, implement process controls</td>
+                </tr>
+                <tr>
+                    <td class="severity-low">Low</td>
+                    <td>Order Cancelled No Reason, Huge Time Difference</td>
+                    <td>Minimal financial impact, potential operational inefficiencies</td>
+                    <td>Address in regular review cycles, monitor for patterns</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Detailed Anomaly Analysis</h2>
+        <p>The following anomaly types were detected across all sales channels:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Anomaly Flag</th>
+                    <th>Description</th>
+                    <th>Potential Cause</th>
+                    <th>Financial Impact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>flag_tax_mismatch</td>
+                    <td>Reported tax amount doesn't match calculated tax based on applicable rates</td>
+                    <td>Incorrect tax rate application, manual override, system calculation error</td>
+                    <td>Direct revenue leakage, tax compliance risk</td>
+                </tr>
+                <tr>
+                    <td>flag_zero_price_or_subtotal</td>
+                    <td>Order recorded with zero price or subtotal</td>
+                    <td>System error, intentional manipulation, incomplete order processing</td>
+                    <td>Complete revenue loss for affected transactions</td>
+                </tr>
+                <tr>
+                    <td>flag_discount_not_approved</td>
+                    <td>Discount applied without proper authorization</td>
+                    <td>Bypassing approval workflow, system control failure</td>
+                    <td>Unauthorized margin reduction</td>
+                </tr>
+                <tr>
+                    <td>flag_service_charge_mismatch</td>
+                    <td>Service charge doesn't match expected calculation</td>
+                    <td>Incorrect rate application, manual adjustment</td>
+                    <td>Revenue leakage on service fees</td>
+                </tr>
+                <tr>
+                    <td>flag_price_modification</td>
+                    <td>Item price modified from standard menu price</td>
+                    <td>Manual override, special request handling, potential fraud</td>
+                    <td>Inconsistent pricing, margin impact</td>
+                </tr>
+                <tr>
+                    <td>flag_discount_high</td>
+                    <td>Discount percentage exceeds normal thresholds</td>
+                    <td>Special promotion, potential excessive discounting</td>
+                    <td>Margin erosion, potential abuse</td>
+                </tr>
+                <tr>
+                    <td>flag_complimentary_price_charged</td>
+                    <td>Item marked as complimentary but still charged</td>
+                    <td>Miscommunication, system error in comp processing</td>
+                    <td>Customer satisfaction issue, potential double-counting</td>
+                </tr>
+                <tr>
+                    <td>flag_order_cancelled_no_reason</td>
+                    <td>Order cancelled without documented reason</td>
+                    <td>Staff error, customer-initiated without reason capture</td>
+                    <td>Operational inefficiency, potential lost sales</td>
+                </tr>
+                <tr>
+                    <td>flag_huge_time_diff</td>
+                    <td>Abnormal time gap between order stages</td>
+                    <td>System delay, staff handling issues, intentional delay</td>
+                    <td>Operational inefficiency, customer experience impact</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Patterns and Correlations</h3>
+        <p>Analysis reveals a strong correlation between <b>flag_discount_not_approved</b> and <b>flag_discount_high</b>, suggesting a potential weakness in the discount approval process. The combination of <b>flag_tax_mismatch</b> and <b>flag_service_charge_mismatch</b> in Zomato and Swiggy raises concerns about the accuracy of automated calculations and integrations with these platforms.</p>
+    </section>
+
+    <section>
+        <h2>Channel-Specific Anomaly Profiles</h2>
+
+        <h3>Home Delivery Channel</h3>
+        <img src="anomaly_counts_cleaned_area_Home_Delivery_features.png" alt="Home Delivery Anomaly Counts">
+        <p><b>Insight:</b> The Home Delivery channel shows a notable number of 'Huge Time Difference' anomalies. This may indicate delays in order processing or delivery, negatively impacting customer satisfaction. The presence of 'Zero Price or Subtotal' anomalies suggests potential system glitches or data entry errors.</p>
+        <p><b>Recommendation:</b> Implement real-time tracking of delivery times and investigate the root cause of processing delays. Enhance data validation checks to prevent orders with zero prices or subtotals.</p>
+
+        <h3>Parcel Channel</h3>
+        <img src="anomaly_counts_cleaned_area_Parcel_features.png" alt="Parcel Anomaly Counts">
+        <p><b>Insight:</b> The Parcel channel has a significant number of 'Tax Mismatch' anomalies. This could be due to incorrect tax rate application during order processing. The 'High Discount' anomalies suggest potential issues with discount management.</p>
+        <p><b>Recommendation:</b> Review and update tax rate configurations. Implement stricter discount approval policies and regularly monitor discount ratios.</p>
+
+        <h3>Swiggy Channel</h3>
+        <img src="anomaly_counts_cleaned_area_Swiggy_features.png" alt="Swiggy Anomaly Counts">
+        <p><b>Insight:</b> The Swiggy channel exhibits a high incidence of both 'Tax Mismatch' and 'Service Charge Mismatch' anomalies. This suggests potential integration issues with Swiggy's platform or inconsistencies in data transfer.</p>
+        <p><b>Recommendation:</b> Investigate the data integration process with Swiggy and ensure accurate transfer of tax and service charge information. Automate reconciliation processes to identify and correct discrepancies.</p>
+
+        <h3>Zomato Channel</h3>
+        <img src="anomaly_counts_cleaned_area_Zomato_features.png" alt="Zomato Anomaly Counts">
+        <p><b>Insight:</b> Similar to Swiggy, the Zomato channel also shows a high number of 'Tax Mismatch' and 'Service Charge Mismatch' anomalies. This reinforces the need for a comprehensive review of integration processes.</p>
+        <p><b>Recommendation:</b> Conduct a thorough audit of the data integration with Zomato. Establish clear protocols for data validation and implement automated reconciliation processes.</p>
+
+        <h3>Dine-in Channel</h3>
+        <img src="anomaly_counts_cleaned_area_Dine_in_features.png" alt="Dine-in Anomaly Counts">
+        <p><b>Insight:</b> The Dine-in channel shows a moderate number of anomalies across various categories. The presence of 'Discount Not Approved' anomalies indicates potential issues with adherence to discount approval policies.</p>
+        <p><b>Recommendation:</b> Reinforce discount approval workflows and provide training to staff on proper discount application procedures.</p>
+
+        <h3>Garden Table Channel</h3>
+        <img src="anomaly_counts_cleaned_area_Garden_Table_features.png" alt="Garden Table Anomaly Counts">
+        <p><b>Insight:</b> The Garden Table channel shows a relatively low number of anomalies compared to other channels. However, the 'Discount High' anomalies warrant attention to ensure responsible discounting practices.</p>
+        <p><b>Recommendation:</b> Monitor discount ratios and ensure that discounts are aligned with established promotional strategies.</p>
+
+        <h3>PARTY Channel</h3>
+        <img src="anomaly_counts_cleaned_area_PARTY_features.png" alt="PARTY Anomaly Counts">
+        <p><b>Insight:</b> The Party channel exhibits a noticeable number of 'Service Charge Mismatch' anomalies. This could be due to the complex service charge calculations often associated with party bookings.</p>
+        <p><b>Recommendation:</b> Simplify service charge calculation processes for party bookings and provide clear guidelines to staff. Implement automated checks to ensure accuracy.</p>
+
+        <h3>Personal Dine-In Room Channel</h3>
+        <img src="anomaly_counts_cleaned_area_Personal_Dine_In_Room_features.png" alt="Personal Dine-In Room Anomaly Counts">
+        <p><b>Insight:</b> The Personal Dine-In Room channel shows a relatively high number of 'Tax Mismatch' anomalies. This could be due to the specific tax regulations applicable to private dining rooms.</p>
+        <p><b>Recommendation:</b> Review and update tax rate configurations for private dining rooms. Provide training to staff on the correct tax application procedures.</p>
+
+    </section>
+
+    <section>
+        <h2>Actionable Recommendations</h2>
+        <ul>
+            <li class="recommendation">
+                <strong>Immediate:</strong> Implement automated tax calculation and reconciliation processes for Zomato and Swiggy integrations.
+                <p><b>Impact:</b> Reduces tax discrepancies and ensures compliance.</p>
+                <p><b>Effort:</b> Medium - Requires coordination with platform providers and system configuration.</p>
+            </li>
+            <li class="recommendation">
+                <strong>Short-Term:</strong> Review and strengthen discount approval workflows, establishing clear thresholds and approval hierarchies.
+                <p><b>Impact:</b> Prevents unauthorized margin reduction and ensures responsible discounting.</p>
+                <p><b>Effort:</b> Low - Primarily involves policy changes and staff training.</p>
+            </li>
+            <li class="recommendation">
+                <strong>Medium-Term:</strong> Develop and implement a continuous monitoring and alerting system for anomalies, leveraging the AI-powered auditing system.
+                <p><b>Impact:</b> Proactively detects and addresses issues, minimizing financial leakage and operational inefficiencies.</p>
+                <p><b>Effort:</b> High - Requires system development and integration.</p>
+            </li>
+            <li class="recommendation">
+                <strong>Long-Term:</strong> Explore the use of adaptive learning models to improve anomaly detection accuracy and adapt to evolving business patterns.
+                <p><b>Impact:</b> Enhances the effectiveness of the auditing system and provides more accurate insights.</p>
+                <p><b>Effort:</b> Very High - Requires advanced data science expertise and model development.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Implementation Roadmap</h2>
+        <p><b>Phase 1: Immediate Actions (within 1 month)</b></p>
+        <ul>
+            <li>Address tax mismatches in Zomato and Swiggy integrations.</li>
+            <li>Strengthen discount approval workflows.</li>
+            <li>Conduct staff training on proper discount application and tax procedures.</li>
+        </ul>
+        <p><b>Phase 2: Short-Term Improvements (within 3 months)</b></p>
+        <ul>
+            <li>Standardize service charge calculations across all channels.</li>
+            <li>Implement real-time tracking of delivery times for Home Delivery.</li>
+            <li>Enhance data validation checks to prevent zero-price orders.</li>
+        </ul>
+        <p><b>Phase 3: Medium-Term Enhancements (within 6 months)</b></p>
+        <ul>
+            <li>Develop and implement a continuous monitoring and alerting system for anomalies.</li>
+            <li>Automate reconciliation processes for tax and service charge data.</li>
+        </ul>
+        
+    </div>
+    <footer>
+        <p>Generated by the AI-Powered Sales Data Auditing System Pipeline</p>
+        <p>Report Date: April 06, 2025</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@layout/*": ["frontend/components/layout/*"]
+    },
+    "esModuleInterop": true,
+    "moduleResolution": "node"
+  }
+}
